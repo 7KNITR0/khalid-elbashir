@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+        body{
+         background-color:rgb(8, 151, 212);
+        }
+            #birthdayHopper {
+      width: 200px;
+      height: auto;
+      border: 4px dashed #ff69b4; 
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      background-color: #fff0f5;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #birthdayHopper:hover {
+      transform: scale(1.1) rotate(-2deg);
+    }
+        .partyTitle {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-size: 2em;
+      color: #ff4500; 
+      text-shadow: 2px 2px #ffd700; 
+      background-color: #fff8dc; 
+      padding: 10px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      border: 3px solid #ff69b4; 
+      animation: bounce 1s infinite alternate;
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+    }
+        .inviteHeading {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 3em;
+      color: #8a2be2; 
+      text-align: center;
+      margin-top: 30px;
+      text-shadow: 3px 3px #ffb6c1;
+      background: linear-gradient(to right, #ffccff, #ccffff);
+      padding: 20px;
+      border-radius: 20px;
+      border: 5px double #ff69b4;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+      animation: glow 2s infinite ease-in-out;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+      }
+      100% {
+        box-shadow: 0 0 35px rgba(255, 105, 180, 0.9);
+      }
+    }
+        .partyText {
+      font-family: 'Verdana', sans-serif;
+      font-size: 1.2em;
+      color: #333;
+      background-color: #e6f7ff; 
+      border-left: 5px solid #00bfff; 
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 191, 255, 0.2);
+      max-width: 500px;
+    }
+ .phone-number {
+  font-weight: bold;
+  color: #000000;
+  background-color: #fff0f5; 
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px rgba(255, 20, 147, 0.3);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+.partyText {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  background-color: #e6f7ff; 
+  border-left: 5px solid #ff1493; 
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 191, 255, 0.3);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  color: #333;
+  margin: 15px 0;
+  text-align: center;
+  line-height: 1.6;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+p:first-of-type {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #4b0082; 
+  background-color: #f0f8ff; 
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(75, 0, 130, 0.1);
+}
+
+
+p:nth-of-type(2) {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #ff6347; 
+  text-transform: capitalize;
+  background-color: #f5f5f5; 
+  padding: 12px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 99, 71, 0.1);
+}
+
+
+p:last-of-type {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #3a3a3a; 
+  background-color: #ffffff; 
+  padding: 10px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.phone-number {
+  font-weight: bold;
+  color: #000000; 
+  background-color: #ffebcd; 
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.phone-number:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+    
+        
+            
+        </style>
+    </head>
+    <body>
+        
+   <h1 class="inviteHeading">You're invited!</h1>
+        
+    <h2 class="partyTitle">To Birthday party!</h2>
+        
+        <img id="birthdayHopper" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Hopper-Jumping.png" alt="birthday party">
+        
+    <div class="partyText">
+    <p>It will be like:</p>
+        <ul>
+            <li>Date:oct,9,2022 </li>
+              <li>time:12 noon </li>
+                <li>place:Fun together park </li>
+        </ul></div>
+        <p> there will be pizza,drinks,video games and cinema</p>
+           <p> I am looking fordward to seeing you !</p>
+              <p> RSVP at<span class="phone-number"> 001-444-jump</span></p>
+        
+    </body>
+</html>
